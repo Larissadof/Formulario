@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <fieldset id="Cadastro">
+        <legend>Cadastro</legend>
+        <h4>(*)Campos obrigatórios</h4>
+    <form method="POST" action="obrigado.html">
+<p>Tipo de conta*
+<input type="radio" name="tipo_conta" id="conta_pessoal" value="conta_pessoal" required checked>Conta pessoal
+<input type="radio" name="tipo_conta" id="conta_comercial" value="conta_comercial" required checked>Conta comercial
+</p>
+<p><label for="p_nome">Primeiro nome*</label>
+    <input type="text" name="p_nome" id="p_nome" maxlength="50" required>
+</p>
+<p><label for="u_nome">Último nome*</label>
+    <input type="text" name="u_nome" id="u_nome" maxlength="50">
+</p>
+<p>País/Região*
+<select name="pais" id="pais" required placeholder="Selecione seu país">
+<option>Argentina</option>
+<option>Brasil</option>
+<option>China</option>
+<option>Colômbia</option>
+<option>Equador</option>
+<option>Grécia</option>
+<option>Itália</option>
+</select>
+</p>
+<p><label for="endereco">Endereço*</label>
+    <input type="text" name="endereco" id="endereco" maxlength="100" required>
+</p>
+<p><label for="endereco2">Endereço 2</label>
+<input type="text" name="endereco2" id="endereco2" maxlength="100">
+</p>
+<p><label for ="cidade">Cidade*</label>
+    <input type="text" name="cidade" id="cidade" maxlength="100" required>
+</p>
+<p>Estado*
+<select name="estado" id="estado" required placeholder="Selecione seu estado">
+<option>MG</option>
+<option>BA</option>
+<option>PR</option>
+<option>SC</option>
+<option>SP</option>
+<option>GO</option>
+</select>
+</p>
+<p><label for="cep">CEP*</label>
+   <input type="text" name="cep" id="cep" maxlength="8" required>
+</p>
+<h5>Usado apenas para questões relacionadas ao seu pedido</h5>
+<p><label for="numero">Número de telefone*</label>
+<input type="text" name="numero" id="numero" maxlength="11" required>
+</p>
+<p><input type="submit" value="Cadastrar">
+</p>
+    </form>
+</fieldset>
+</body>
+</html>
